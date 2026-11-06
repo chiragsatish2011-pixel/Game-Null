@@ -1,0 +1,200 @@
+{
+	"acceptance_evaluation": {
+		"overall_tier_2_pass": false,
+		"p50_pass": true,
+		"p95_pass": true,
+		"p99_pass": false,
+		"sustained_fps_pass": true
+	},
+	"benchmark_id": "M4.1_R1_BENCHMARK",
+	"configuration": {
+		"camera_mode": "THIRD_PERSON",
+		"config_id": "C",
+		"repetition": 3,
+		"shadow_atlas_size": 512,
+		"window_mode_enum": 0,
+		"window_mode_name": "WINDOWED"
+	},
+	"engine_metrics": {
+		"draw_calls": 21,
+		"primitives": 2066,
+		"render_video_mem_mb": 23.6499128341675
+	},
+	"measurement": {
+		"actual_duration_sec": 60.014477,
+		"duration_target_sec": 60.0,
+		"percentiles_ms": {
+			"max": 77.159,
+			"p50": 21.385,
+			"p95": 35.951,
+			"p99": 42.077
+		},
+		"spikes_log": [
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 42.44,
+				"frame_index": 978,
+				"timestamp_ms": 22048.438
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 52.244,
+				"frame_index": 1054,
+				"timestamp_ms": 24005.048
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 46.0,
+				"frame_index": 1069,
+				"timestamp_ms": 24487.383
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 44.11,
+				"frame_index": 1070,
+				"timestamp_ms": 24531.493
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 50.473,
+				"frame_index": 1082,
+				"timestamp_ms": 24925.335
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 47.492,
+				"frame_index": 1098,
+				"timestamp_ms": 25384.911
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 45.089,
+				"frame_index": 1103,
+				"timestamp_ms": 25557.427
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 46.944,
+				"frame_index": 1218,
+				"timestamp_ms": 28542.711
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 77.159,
+				"frame_index": 1356,
+				"timestamp_ms": 31876.083
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 42.09,
+				"frame_index": 1360,
+				"timestamp_ms": 31961.448
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 42.486,
+				"frame_index": 1486,
+				"timestamp_ms": 35144.378
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 48.839,
+				"frame_index": 1487,
+				"timestamp_ms": 35193.217
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 48.585,
+				"frame_index": 1491,
+				"timestamp_ms": 35325.678
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 48.221,
+				"frame_index": 1493,
+				"timestamp_ms": 35404.015
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 48.064,
+				"frame_index": 1497,
+				"timestamp_ms": 35537.983
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 43.536,
+				"frame_index": 1503,
+				"timestamp_ms": 35733.457
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 51.282,
+				"frame_index": 1512,
+				"timestamp_ms": 36060.72
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 44.758,
+				"frame_index": 1514,
+				"timestamp_ms": 36132.021
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 43.161,
+				"frame_index": 1553,
+				"timestamp_ms": 37038.715
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 64.384,
+				"frame_index": 1563,
+				"timestamp_ms": 37342.384
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 42.077,
+				"frame_index": 2005,
+				"timestamp_ms": 47332.133
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 46.452,
+				"frame_index": 2010,
+				"timestamp_ms": 47497.201
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 46.405,
+				"frame_index": 2111,
+				"timestamp_ms": 49926.531
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 60.742,
+				"frame_index": 2203,
+				"timestamp_ms": 51951.671
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 65.847,
+				"frame_index": 2495,
+				"timestamp_ms": 58073.943
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 42.088,
+				"frame_index": 2499,
+				"timestamp_ms": 58204.702
+			}
+		],
+		"spikes_over_42ms_count": 26,
+		"sustained_fps": 43.1395911356522,
+		"total_rendered_frames": 2589
+	},
+	"timestamp_utc": "2026-11-05T14:21:06",
+	"warmup": {
+		"actual_duration_sec": 5.023467,
+		"discarded_frames": 214,
+		"duration_target_sec": 5.0
+	}
+}

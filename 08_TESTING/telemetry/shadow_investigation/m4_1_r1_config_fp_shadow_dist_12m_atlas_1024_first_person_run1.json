@@ -1,0 +1,118 @@
+{
+	"acceptance_evaluation": {
+		"overall_tier_2_pass": false,
+		"p50_pass": true,
+		"p95_pass": false,
+		"p99_pass": true,
+		"sustained_fps_pass": true
+	},
+	"benchmark_id": "M4.1_R1_BENCHMARK",
+	"configuration": {
+		"camera_mode": "FIRST_PERSON",
+		"config_id": "FP_SHADOW_DIST_12M_ATLAS_1024",
+		"repetition": 1,
+		"shadow_atlas_size": 1024,
+		"shadow_enabled": true,
+		"shadow_max_distance": 12.0,
+		"window_mode_enum": 0,
+		"window_mode_name": "WINDOWED"
+	},
+	"engine_metrics": {
+		"draw_calls": 10,
+		"primitives": 1094,
+		"render_video_mem_mb": 23.6499128341675
+	},
+	"measurement": {
+		"actual_duration_sec": 30.010557,
+		"duration_target_sec": 30.0,
+		"percentiles_ms": {
+			"max": 57.478,
+			"p50": 22.19,
+			"p95": 36.577,
+			"p99": 41.923
+		},
+		"spikes_log": [
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 50.038,
+				"frame_index": 384,
+				"timestamp_ms": 8302.035
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 51.594,
+				"frame_index": 432,
+				"timestamp_ms": 9423.097
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 43.359,
+				"frame_index": 433,
+				"timestamp_ms": 9466.456
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 55.517,
+				"frame_index": 438,
+				"timestamp_ms": 9640.886
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 57.478,
+				"frame_index": 514,
+				"timestamp_ms": 11585.75
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 42.311,
+				"frame_index": 530,
+				"timestamp_ms": 11944.48
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 42.384,
+				"frame_index": 616,
+				"timestamp_ms": 13836.772
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 44.106,
+				"frame_index": 632,
+				"timestamp_ms": 14274.776
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 43.688,
+				"frame_index": 866,
+				"timestamp_ms": 19841.885
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 42.273,
+				"frame_index": 868,
+				"timestamp_ms": 19895.167
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 43.342,
+				"frame_index": 870,
+				"timestamp_ms": 19948.201
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 43.23,
+				"frame_index": 1256,
+				"timestamp_ms": 28777.564
+			}
+		],
+		"spikes_over_42ms_count": 12,
+		"sustained_fps": 43.7179489870848,
+		"total_rendered_frames": 1312
+	},
+	"timestamp_utc": "2026-11-05T14:42:15",
+	"warmup": {
+		"actual_duration_sec": 4.010314,
+		"discarded_frames": 186,
+		"duration_target_sec": 4.0
+	}
+}

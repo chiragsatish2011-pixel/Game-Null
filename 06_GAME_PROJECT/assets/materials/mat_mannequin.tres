@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "mat_mannequin"
+albedo_color = Color(0.68, 0.72, 0.78, 1)
+roughness = 0.5
+distance_fade_mode = 2
+distance_fade_min_distance = 0.25
+distance_fade_max_distance = 0.5

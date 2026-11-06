@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[resource]
+resource_name = "mat_thomas_mercer"
+albedo_color = Color(0.22, 0.23, 0.25, 1)
+metallic = 0.05
+roughness = 0.85

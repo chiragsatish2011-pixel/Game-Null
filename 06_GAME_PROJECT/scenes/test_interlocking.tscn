@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3m7x8p1q2y4"]
+
+[ext_resource type="PackedScene" path="res://scenes/world/vesper_01/shunting_cut_platform_02.tscn" id="1_level"]
+[ext_resource type="Script" path="res://scripts/test_interlocking_runner.gd" id="2_test_runner"]
+
+[node name="TestInterlocking" instance=ExtResource("1_level")]
+
+[node name="TestRunner" type="Node" parent="."]
+script = ExtResource("2_test_runner")

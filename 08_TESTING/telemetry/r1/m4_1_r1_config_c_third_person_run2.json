@@ -1,0 +1,56 @@
+{
+	"acceptance_evaluation": {
+		"overall_tier_2_pass": true,
+		"p50_pass": true,
+		"p95_pass": true,
+		"p99_pass": true,
+		"sustained_fps_pass": true
+	},
+	"benchmark_id": "M4.1_R1_BENCHMARK",
+	"configuration": {
+		"camera_mode": "THIRD_PERSON",
+		"config_id": "C",
+		"repetition": 2,
+		"shadow_atlas_size": 512,
+		"window_mode_enum": 0,
+		"window_mode_name": "WINDOWED"
+	},
+	"engine_metrics": {
+		"draw_calls": 21,
+		"primitives": 2066,
+		"render_video_mem_mb": 23.6499128341675
+	},
+	"measurement": {
+		"actual_duration_sec": 60.008287,
+		"duration_target_sec": 60.0,
+		"percentiles_ms": {
+			"max": 54.609,
+			"p50": 20.527,
+			"p95": 29.295,
+			"p99": 36.005
+		},
+		"spikes_log": [
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 54.609,
+				"frame_index": 1993,
+				"timestamp_ms": 43948.213
+			},
+			{
+				"camera_mode": "THIRD_PERSON",
+				"delta_ms": 50.399,
+				"frame_index": 2513,
+				"timestamp_ms": 55419.268
+			}
+		],
+		"spikes_over_42ms_count": 2,
+		"sustained_fps": 45.4437234643942,
+		"total_rendered_frames": 2727
+	},
+	"timestamp_utc": "2026-11-05T14:19:59",
+	"warmup": {
+		"actual_duration_sec": 5.011798,
+		"discarded_frames": 176,
+		"duration_target_sec": 5.0
+	}
+}

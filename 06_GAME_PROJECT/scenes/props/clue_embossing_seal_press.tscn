@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://b2m8n7x4p31q5"]
+
+[ext_resource type="Script" path="res://scripts/interaction/interactable_prop.gd" id="1_interact_script"]
+[ext_resource type="Material" path="res://assets/materials/mat_prop_embossing_press.tres" id="2_mat_press"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_static"]
+size = Vector3(0.3, 0.35, 0.2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_interact"]
+size = Vector3(1.0, 0.8, 1.0)
+
+[sub_resource type="BoxMesh" id="BoxMesh_base"]
+material = ExtResource("2_mat_press")
+size = Vector3(0.25, 0.12, 0.18)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_lever"]
+material = ExtResource("2_mat_press")
+top_radius = 0.02
+bottom_radius = 0.03
+height = 0.35
+
+[node name="ClueEmbossingSealPress" type="StaticBody3D"]
+collision_layer = 1
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15, 0)
+shape = SubResource("BoxShape3D_static")
+
+[node name="BaseMesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.06, 0)
+mesh = SubResource("BoxMesh_base")
+
+[node name="LeverMesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 0.22, 0)
+mesh = SubResource("CylinderMesh_lever")
+
+[node name="InteractableArea" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_interact_script")
+prompt_text = "[E] Inspect Embossing Seal Press"
+clue_id = "clue_embossing_seal_press"
+clue_title = "Municipal Desktop Embossing Seal Press"
+clue_description = "Heavy cast-iron desktop embossing press with counter-balanced brass ball arm and hardened circular steel die plates."
+clue_forensic_notes = "Die face bears the seal of the Vesper District 01 Municipal Transit Authority. Traces of carbon ink and embossed permit paper embedded in the lower plate."
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractableArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+shape = SubResource("BoxShape3D_interact")
+
+[node name="InspectionAnchor" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 0.55, 0.65)

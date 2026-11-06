@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8m1n4x5p72y3"]
+
+[ext_resource type="Script" path="res://scripts/interaction/interactable_prop.gd" id="1_interact_script"]
+[ext_resource type="PackedScene" path="res://assets/props/prop_regulator_clock.glb" id="2_clock_mesh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_static"]
+size = Vector3(0.4, 1.0, 0.25)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_interact"]
+size = Vector3(1.2, 1.4, 1.2)
+
+[node name="PropRegulatorClock" type="StaticBody3D"]
+collision_layer = 1
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("BoxShape3D_static")
+
+[node name="ModelInstance" parent="." instance=ExtResource("2_clock_mesh")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="InteractableArea" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_interact_script")
+prompt_text = "[E] Examine Master Clock"
+clue_id = "prop_regulator_clock"
+clue_title = "Master Pendulum Regulator Clock"
+clue_description = "Wall-mounted regulator clock in dark walnut housing with exposed deadbeat escapement gear and cylindrical lead-compensated bob."
+clue_forensic_notes = "Hands are arrested at precisely 03:17:42. Escapement arbor is seized with graphite-lead residue."
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractableArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.4)
+shape = SubResource("BoxShape3D_interact")
+
+[node name="InspectionAnchor" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.9)

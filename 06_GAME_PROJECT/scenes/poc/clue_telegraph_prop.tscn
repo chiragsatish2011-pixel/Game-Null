@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Material" path="res://assets/materials/mat_environment_floor.tres" id="1_table_mat"]
+[ext_resource type="Material" path="res://assets/materials/mat_clue_prop.tres" id="2_clue_mat"]
+[ext_resource type="Script" path="res://scripts/poc/clue_interactable.gd" id="3_interact_script"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_table"]
+material = ExtResource("1_table_mat")
+size = Vector3(1.2, 0.85, 0.8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_table"]
+size = Vector3(1.2, 0.85, 0.8)
+
+[sub_resource type="BoxMesh" id="BoxMesh_prop"]
+material = ExtResource("2_clue_mat")
+size = Vector3(0.3, 0.12, 0.2)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_trigger"]
+radius = 1.2
+
+[node name="ClueDiorama" type="Node3D"]
+
+[node name="TableBody" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.425, 0)
+collision_layer = 1
+collision_mask = 0
+
+[node name="TableMesh" type="MeshInstance3D" parent="TableBody"]
+mesh = SubResource("BoxMesh_table")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TableBody"]
+shape = SubResource("BoxShape3D_table")
+
+[node name="TelegraphKeyMesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.91, 0)
+mesh = SubResource("BoxMesh_prop")
+
+[node name="ClueInteractable" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("3_interact_script")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ClueInteractable"]
+shape = SubResource("SphereShape3D_trigger")
+
+[node name="InspectionAnchor" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.906308, 0.422618, 0, -0.422618, 0.906308, 0, 1.25, 0.6)

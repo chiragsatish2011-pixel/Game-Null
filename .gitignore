@@ -1,0 +1,49 @@
+# ==========================================
+# PROJECT NULL — Git Ignore Specifications
+# Mandate: SEC-0001, ARCH-0010, NON-IMPLEMENTATION GATE
+# ==========================================
+
+# Godot 4.x runtime & cache (.import sidecars MUST be tracked)
+.godot/
+export.cfg
+export_presets.cfg
+
+# Autonomous agent state & loops
+.wrap/
+.nomin/
+*.log
+
+# Pipeline quarantine & temporary staging
+07_ASSETS/quarantine/
+07_ASSETS/incoming/*.tmp
+*.tmp
+*.bak
+*.swp
+*.orig
+
+# Python bytecode & environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# Secrets, Credentials, Tokens & Local Auth
+*.env
+*.env.*
+*.key
+*.pem
+*credentials*
+*secret*
+*token*
+user://*
+*funplay_mcp_settings.cfg*
+
+# Operating System artifacts
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+._*

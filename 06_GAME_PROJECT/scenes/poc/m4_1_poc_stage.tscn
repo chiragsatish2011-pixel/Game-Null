@@ -1,0 +1,49 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/poc/m4_1_poc_stage.gd" id="1_stage_script"]
+[ext_resource type="PackedScene" path="res://scenes/poc/env_corridor_slice.tscn" id="2_corridor"]
+[ext_resource type="PackedScene" path="res://scenes/poc/clue_telegraph_prop.tscn" id="3_clue"]
+[ext_resource type="PackedScene" path="res://scenes/player/proto_humanoid_01.tscn" id="4_player"]
+[ext_resource type="Script" path="res://scripts/benchmark/benchmark_runner.gd" id="5_bench_script"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud_poc.tscn" id="6_hud"]
+
+[sub_resource type="Environment" id="Environment_poc"]
+background_mode = 1
+background_color = Color(0.08, 0.09, 0.11, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.25, 0.28, 0.32, 1)
+ambient_light_energy = 1.0
+fog_enabled = true
+fog_mode = 1
+fog_light_color = Color(0.12, 0.14, 0.16, 1)
+fog_density = 0.015
+
+[node name="M41PoCStage" type="Node3D"]
+script = ExtResource("1_stage_script")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_poc")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.707107, -0.40558, 0.579228, 0, 0.819152, 0.573576, -0.707107, -0.40558, 0.579228, 0, 10, 0)
+light_color = Color(0.95, 0.92, 0.85, 1)
+light_energy = 1.4
+shadow_enabled = true
+directional_shadow_mode = 0
+directional_shadow_max_distance = 40.0
+
+[node name="CorridorEnvironment" parent="." instance=ExtResource("2_corridor")]
+
+[node name="ClueDiorama" parent="." instance=ExtResource("3_clue")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2)
+
+[node name="ProtoHumanoid01" parent="." instance=ExtResource("4_player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+
+[node name="BenchmarkRunner" type="Node" parent="."]
+script = ExtResource("5_bench_script")
+
+[node name="UI_Canvas" type="CanvasLayer" parent="."]
+layer = 10
+
+[node name="HUDPoC" parent="UI_Canvas" instance=ExtResource("6_hud")]

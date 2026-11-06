@@ -1,0 +1,148 @@
+{
+	"acceptance_evaluation": {
+		"overall_tier_2_pass": false,
+		"p50_pass": true,
+		"p95_pass": true,
+		"p99_pass": false,
+		"sustained_fps_pass": true
+	},
+	"benchmark_id": "M4.1_R1_BENCHMARK",
+	"configuration": {
+		"camera_mode": "FIRST_PERSON",
+		"config_id": "FP_SHADOW_DISABLED",
+		"repetition": 1,
+		"shadow_atlas_size": 1024,
+		"shadow_enabled": false,
+		"shadow_max_distance": 40.0,
+		"window_mode_enum": 0,
+		"window_mode_name": "WINDOWED"
+	},
+	"engine_metrics": {
+		"draw_calls": 6,
+		"primitives": 694,
+		"render_video_mem_mb": 21.6184034347534
+	},
+	"measurement": {
+		"actual_duration_sec": 30.003944,
+		"duration_target_sec": 30.0,
+		"percentiles_ms": {
+			"max": 76.033,
+			"p50": 18.739,
+			"p95": 28.693,
+			"p99": 44.767
+		},
+		"spikes_log": [
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 76.033,
+				"frame_index": 718,
+				"timestamp_ms": 13640.951
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 51.817,
+				"frame_index": 720,
+				"timestamp_ms": 13722.661
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 59.499,
+				"frame_index": 721,
+				"timestamp_ms": 13782.16
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 44.767,
+				"frame_index": 723,
+				"timestamp_ms": 13842.346
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 57.474,
+				"frame_index": 926,
+				"timestamp_ms": 17704.424
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 48.696,
+				"frame_index": 927,
+				"timestamp_ms": 17753.12
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 47.448,
+				"frame_index": 929,
+				"timestamp_ms": 17835.605
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 46.575,
+				"frame_index": 931,
+				"timestamp_ms": 17914.882
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 54.855,
+				"frame_index": 933,
+				"timestamp_ms": 18004.971
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 49.042,
+				"frame_index": 934,
+				"timestamp_ms": 18054.013
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 46.486,
+				"frame_index": 945,
+				"timestamp_ms": 18406.01
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 46.895,
+				"frame_index": 947,
+				"timestamp_ms": 18492.117
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 55.129,
+				"frame_index": 952,
+				"timestamp_ms": 18655.408
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 46.079,
+				"frame_index": 1055,
+				"timestamp_ms": 21015.017
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 43.745,
+				"frame_index": 1087,
+				"timestamp_ms": 21829.359
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 56.148,
+				"frame_index": 1167,
+				"timestamp_ms": 23694.236
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 45.685,
+				"frame_index": 1179,
+				"timestamp_ms": 24005.764
+			}
+		],
+		"spikes_over_42ms_count": 17,
+		"sustained_fps": 50.0267564824144,
+		"total_rendered_frames": 1501
+	},
+	"timestamp_utc": "2026-11-05T14:41:03",
+	"warmup": {
+		"actual_duration_sec": 4.009859,
+		"discarded_frames": 188,
+		"duration_target_sec": 4.0
+	}
+}

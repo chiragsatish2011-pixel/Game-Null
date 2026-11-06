@@ -1,0 +1,572 @@
+{
+	"acceptance_evaluation": {
+		"overall_tier_2_pass": false,
+		"p50_pass": true,
+		"p95_pass": false,
+		"p99_pass": false,
+		"sustained_fps_pass": true
+	},
+	"benchmark_id": "M4.1_R1_BENCHMARK",
+	"configuration": {
+		"camera_mode": "FIRST_PERSON",
+		"config_id": "C",
+		"repetition": 1,
+		"shadow_atlas_size": 512,
+		"window_mode_enum": 0,
+		"window_mode_name": "WINDOWED"
+	},
+	"engine_metrics": {
+		"draw_calls": 10,
+		"primitives": 1094,
+		"render_video_mem_mb": 21.6184034347534
+	},
+	"measurement": {
+		"actual_duration_sec": 60.031886,
+		"duration_target_sec": 60.0,
+		"percentiles_ms": {
+			"max": 85.205,
+			"p50": 25.516,
+			"p95": 40.526,
+			"p99": 53.421
+		},
+		"spikes_log": [
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 49.757,
+				"frame_index": 43,
+				"timestamp_ms": 1040.552
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 66.404,
+				"frame_index": 50,
+				"timestamp_ms": 1281.634
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 54.691,
+				"frame_index": 59,
+				"timestamp_ms": 1556.143
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 42.604,
+				"frame_index": 109,
+				"timestamp_ms": 2791.594
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 69.75,
+				"frame_index": 114,
+				"timestamp_ms": 2965.266
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 44.336,
+				"frame_index": 116,
+				"timestamp_ms": 3044.267
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 44.994,
+				"frame_index": 342,
+				"timestamp_ms": 8735.324
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 43.077,
+				"frame_index": 608,
+				"timestamp_ms": 15297.131
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 46.279,
+				"frame_index": 662,
+				"timestamp_ms": 16824.577
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 57.107,
+				"frame_index": 695,
+				"timestamp_ms": 17617.037
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 58.415,
+				"frame_index": 915,
+				"timestamp_ms": 22024.444
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 44.655,
+				"frame_index": 924,
+				"timestamp_ms": 22234.52
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 54.014,
+				"frame_index": 928,
+				"timestamp_ms": 22382.803
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 51.131,
+				"frame_index": 951,
+				"timestamp_ms": 23000.336
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 44.423,
+				"frame_index": 952,
+				"timestamp_ms": 23044.759
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 42.528,
+				"frame_index": 968,
+				"timestamp_ms": 23443.194
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 45.291,
+				"frame_index": 977,
+				"timestamp_ms": 23707.052
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 85.205,
+				"frame_index": 978,
+				"timestamp_ms": 23792.257
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 45.74,
+				"frame_index": 981,
+				"timestamp_ms": 23921.191
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 55.643,
+				"frame_index": 982,
+				"timestamp_ms": 23976.834
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 42.071,
+				"frame_index": 986,
+				"timestamp_ms": 24141.201
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 55.048,
+				"frame_index": 987,
+				"timestamp_ms": 24196.249
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 48.73,
+				"frame_index": 990,
+				"timestamp_ms": 24314.571
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 45.096,
+				"frame_index": 995,
+				"timestamp_ms": 24511.324
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 50.006,
+				"frame_index": 1003,
+				"timestamp_ms": 24810.78
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 47.935,
+				"frame_index": 1080,
+				"timestamp_ms": 26932.938
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 46.472,
+				"frame_index": 1091,
+				"timestamp_ms": 27299.923
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 45.116,
+				"frame_index": 1101,
+				"timestamp_ms": 27632.245
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 44.992,
+				"frame_index": 1110,
+				"timestamp_ms": 27927.998
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 47.496,
+				"frame_index": 1113,
+				"timestamp_ms": 28048.846
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 61.091,
+				"frame_index": 1175,
+				"timestamp_ms": 29679.271
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 46.088,
+				"frame_index": 1179,
+				"timestamp_ms": 29818.116
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 72.943,
+				"frame_index": 1184,
+				"timestamp_ms": 30034.913
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 42.022,
+				"frame_index": 1190,
+				"timestamp_ms": 30261.462
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 45.758,
+				"frame_index": 1195,
+				"timestamp_ms": 30452.273
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 48.886,
+				"frame_index": 1201,
+				"timestamp_ms": 30675.989
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 59.142,
+				"frame_index": 1203,
+				"timestamp_ms": 30767.548
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 63.729,
+				"frame_index": 1206,
+				"timestamp_ms": 30906.214
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 45.507,
+				"frame_index": 1211,
+				"timestamp_ms": 31099.636
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 47.727,
+				"frame_index": 1226,
+				"timestamp_ms": 31574.915
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 47.702,
+				"frame_index": 1260,
+				"timestamp_ms": 32478.859
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 53.915,
+				"frame_index": 1268,
+				"timestamp_ms": 32762.706
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 51.612,
+				"frame_index": 1269,
+				"timestamp_ms": 32814.318
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 43.62,
+				"frame_index": 1270,
+				"timestamp_ms": 32857.938
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 50.537,
+				"frame_index": 1279,
+				"timestamp_ms": 33145.629
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 55.59,
+				"frame_index": 1336,
+				"timestamp_ms": 34608.622
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 50.741,
+				"frame_index": 1338,
+				"timestamp_ms": 34695.576
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 64.167,
+				"frame_index": 1339,
+				"timestamp_ms": 34759.743
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 82.978,
+				"frame_index": 1340,
+				"timestamp_ms": 34842.721
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 59.649,
+				"frame_index": 1341,
+				"timestamp_ms": 34902.37
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 49.414,
+				"frame_index": 1344,
+				"timestamp_ms": 35025.723
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 42.757,
+				"frame_index": 1384,
+				"timestamp_ms": 36366.581
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 42.196,
+				"frame_index": 1393,
+				"timestamp_ms": 36670.546
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 45.444,
+				"frame_index": 1394,
+				"timestamp_ms": 36715.99
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 44.187,
+				"frame_index": 1421,
+				"timestamp_ms": 37409.857
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 47.068,
+				"frame_index": 1472,
+				"timestamp_ms": 38734.645
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 43.258,
+				"frame_index": 1477,
+				"timestamp_ms": 38900.673
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 56.083,
+				"frame_index": 1488,
+				"timestamp_ms": 39241.475
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 43.707,
+				"frame_index": 1503,
+				"timestamp_ms": 39655.58
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 43.934,
+				"frame_index": 1560,
+				"timestamp_ms": 41088.302
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 43.103,
+				"frame_index": 1578,
+				"timestamp_ms": 41653.678
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 48.983,
+				"frame_index": 1590,
+				"timestamp_ms": 42023.574
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 43.819,
+				"frame_index": 1621,
+				"timestamp_ms": 42923.033
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 43.115,
+				"frame_index": 1731,
+				"timestamp_ms": 45853.727
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 42.461,
+				"frame_index": 1733,
+				"timestamp_ms": 45907.648
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 42.33,
+				"frame_index": 1774,
+				"timestamp_ms": 47049.418
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 43.387,
+				"frame_index": 1871,
+				"timestamp_ms": 49715.923
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 42.474,
+				"frame_index": 1918,
+				"timestamp_ms": 51105.033
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 42.219,
+				"frame_index": 1976,
+				"timestamp_ms": 52531.94
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 59.398,
+				"frame_index": 1997,
+				"timestamp_ms": 53207.557
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 48.053,
+				"frame_index": 2000,
+				"timestamp_ms": 53299.391
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 44.623,
+				"frame_index": 2002,
+				"timestamp_ms": 53371.185
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 48.823,
+				"frame_index": 2075,
+				"timestamp_ms": 55242.645
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 44.661,
+				"frame_index": 2078,
+				"timestamp_ms": 55325.676
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 43.332,
+				"frame_index": 2094,
+				"timestamp_ms": 55861.591
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 43.963,
+				"frame_index": 2096,
+				"timestamp_ms": 55939.71
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 44.828,
+				"frame_index": 2103,
+				"timestamp_ms": 56186.928
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 42.407,
+				"frame_index": 2115,
+				"timestamp_ms": 56580.099
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 47.039,
+				"frame_index": 2116,
+				"timestamp_ms": 56627.138
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 54.58,
+				"frame_index": 2120,
+				"timestamp_ms": 56775.026
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 59.58,
+				"frame_index": 2155,
+				"timestamp_ms": 57684.213
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 44.132,
+				"frame_index": 2156,
+				"timestamp_ms": 57728.345
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 53.421,
+				"frame_index": 2161,
+				"timestamp_ms": 57922.382
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 51.168,
+				"frame_index": 2163,
+				"timestamp_ms": 57996.362
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 48.027,
+				"frame_index": 2167,
+				"timestamp_ms": 58149.092
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 45.73,
+				"frame_index": 2201,
+				"timestamp_ms": 59191.081
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 42.818,
+				"frame_index": 2215,
+				"timestamp_ms": 59584.181
+			},
+			{
+				"camera_mode": "FIRST_PERSON",
+				"delta_ms": 47.741,
+				"frame_index": 2222,
+				"timestamp_ms": 59830.352
+			}
+		],
+		"spikes_over_42ms_count": 88,
+		"sustained_fps": 37.1136099238994,
+		"total_rendered_frames": 2228
+	},
+	"timestamp_utc": "2026-11-05T14:22:13",
+	"warmup": {
+		"actual_duration_sec": 5.008714,
+		"discarded_frames": 210,
+		"duration_target_sec": 5.0
+	}
+}

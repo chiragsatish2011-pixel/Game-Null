@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://dg73k2h4p89y1"]
+
+[ext_resource type="Script" path="res://scripts/interaction/interactable_prop.gd" id="1_interact_script"]
+[ext_resource type="PackedScene" path="res://assets/props/clue_black_registry.glb" id="2_registry_mesh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_static"]
+size = Vector3(0.5, 0.16, 0.38)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_interact"]
+size = Vector3(1.2, 0.8, 1.2)
+
+[node name="ClueBlackRegistry" type="StaticBody3D"]
+collision_layer = 1
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, 0)
+shape = SubResource("BoxShape3D_static")
+
+[node name="ModelInstance" parent="." instance=ExtResource("2_registry_mesh")]
+transform = Transform3D(0.24, 0, 0, 0, 0.24, 0, 0, 0, 0.24, 0, 0.02, 0)
+
+[node name="InteractableArea" type="Area3D" parent="."]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_interact_script")
+prompt_text = "[E] Inspect The Black Registry"
+clue_id = "clue_black_registry"
+clue_title = "The Black Registry (Volume I)"
+clue_description = "A massive 1970s municipal ledger bound in cold-rolled lead sheet with beaten oak boards and heavy brass corner braces."
+clue_forensic_notes = "Entries cease abruptly on November 14th, 1974. The final recorded signature is Thomas Arthur Mercer. Thumb impressions in soot along the fore-edge."
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractableArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, 0)
+shape = SubResource("BoxShape3D_interact")
+
+[node name="InspectionAnchor" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 0.65, 0.75)
